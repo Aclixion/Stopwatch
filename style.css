@@ -35,4 +35,5 @@
     width: 10rem;
     height: 5rem;
     border: 1px solid grey;
+    overflow: scroll;
 }

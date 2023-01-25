@@ -1,1 +1,6 @@
 const timeDisplay = document.querySelector(".time-display"); // Time display 
+
+const startButton = document.querySelector(".start-btn"); // Start timer button
+const stopButton = document.querySelector(".stop-btn"); // Stop timer button
+const lapButton = document.querySelector(".lap-btn"); // Lap button
+const resetButton = document.querySelector(".reset-btn") // Reset button

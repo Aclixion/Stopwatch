@@ -8,6 +8,10 @@
     font-size: 50px;
 }
 
+.container {
+    width: 10rem;
+}
+
 .time-display {
     font-size: 1.75rem;
 }

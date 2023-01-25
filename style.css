@@ -11,3 +11,7 @@
 .time-display {
     font-size: 1.75rem;
 }
+
+.stop-btn, .reset-btn, .start-btn {
+    font-size: 0.75rem;
+}

@@ -1,0 +1,1 @@
+const timeDisplay = document.querySelector(".time-display"); // Time display 

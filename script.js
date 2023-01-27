@@ -9,3 +9,5 @@ const lapsSection = document.querySelector(".laps-section"); // Laps section to 
 
 let intervalId = null; // Interval ID used to change the timer display
 let startTime = 0; // Time when start button is clicked
+let currentTime = 0; // Current time displayed on time display
+let stopTime = 0; // Time when stop button is clicked

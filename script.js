@@ -11,3 +11,17 @@ let intervalId = null; // Interval ID used to change the timer display
 let startTime = 0; // Time when start button is clicked (in milliseconds)
 let currentTime = 0; // Current time displayed on time display (in milliseconds)
 let stopTime = 0; // Time when stop button is clicked (in milliseconds)
+
+// Starts timer
+function startTimer() {
+	startTime = Date.now();
+	intervalId = setInterval(updateTimer, 10);
+}
+
+// Updates timer
+function updateTimer() {
+	currentTime = stopTime + (Date.now() - startTime);
+    console.log(currentTime);
+}
+
+startButton.addEventListener("click", startTimer);

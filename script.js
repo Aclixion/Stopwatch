@@ -24,4 +24,11 @@ function updateTimer() {
     console.log(currentTime);
 }
 
+// Stops timer
+function stopTimer() {
+    stopTime = currentTime;
+    clearInterval(intervalId);
+}
+
 startButton.addEventListener("click", startTimer);
+stopButton.addEventListener("click", stopTimer);

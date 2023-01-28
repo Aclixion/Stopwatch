@@ -14,8 +14,8 @@ let stopTime = 0; // Time when stop button is clicked (in milliseconds)
 
 // Starts timer
 function startTimer() {
-	startTime = Date.now();
-	intervalId = setInterval(updateTimer, 10);
+    startTime = Date.now();
+    intervalId = setInterval(updateTimer, 10);
 }
 
 // Updates timer
@@ -30,5 +30,11 @@ function stopTimer() {
     clearInterval(intervalId);
 }
 
+function resetTimer() {
+    stopTime = 0;
+    startTime = Date.now();
+}
+
 startButton.addEventListener("click", startTimer);
 stopButton.addEventListener("click", stopTimer);
+resetButton.addEventListener("click", resetTimer);

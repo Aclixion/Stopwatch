@@ -30,6 +30,7 @@ function stopTimer() {
     clearInterval(intervalId);
 }
 
+// Resets timer
 function resetTimer() {
     stopTime = 0;
     startTime = Date.now();

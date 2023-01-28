@@ -35,6 +35,16 @@ function resetTimer() {
     startTime = Date.now();
 }
 
+// Returns a formatted version of a time (time is in milliseconds)
+function getFormattedTime(milliseconds) {
+    let centiseconds = Math.floor(milliseconds / 10);
+    let seconds = Math.floor(milliseconds / 1000);
+    let minutes = Math.floor(seconds / 60);
+    let hours = Math.floor(minutes / 60);
+
+    return `${hours % 24}:${minutes % 60}:${seconds % 60}:${centiseconds % 100}`;
+}
+
 startButton.addEventListener("click", startTimer);
 stopButton.addEventListener("click", stopTimer);
 resetButton.addEventListener("click", resetTimer);

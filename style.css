@@ -38,6 +38,10 @@
     overflow: scroll;
 }
 
+.lap {
+    padding: 5px 3px;
+}
+
 .lap:nth-child(odd) {
     background-color: #e4e4e4;
 }

@@ -75,6 +75,10 @@ body {
     background: linear-gradient(90deg, rgba(216,223,203,1) 8%, rgba(171,177,159,1) 100%);
 }
 
+.start-stop-btns {
+    display: flex;
+}
+
 .lap {
     padding: 5px 3px;
 }

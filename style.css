@@ -28,6 +28,8 @@ body {
     border-radius: 3.75rem;
     border: 5px solid black;
     outline: 3px solid red;
+    width: 7.5rem;
+    text-align: center;
     font-size: 1.75rem;
 }
 

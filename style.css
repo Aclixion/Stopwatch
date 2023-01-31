@@ -46,10 +46,13 @@ body {
     transition: 0.25s;
 }
 
+.btn:hover {
+    cursor: pointer;
+}
+
 .btn:active {
     box-shadow: none;
     margin: 5px 0 0 5px;
-    cursor: pointer;
 }
 
 .buttons-section {

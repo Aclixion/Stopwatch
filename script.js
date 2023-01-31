@@ -37,6 +37,12 @@ function resetTimer() {
     updateTimer();
 }
 
+function addLappedTime() {
+    let newLappedTime = document.createElement("p");
+    newLappedTime.textContent = getFormattedTime(currentTime);
+    lapsSection.appendChild(newLappedTime);
+}
+
 // Returns a formatted version of a time (time is in milliseconds)
 function getFormattedTime(milliseconds) {
     let centiseconds = Math.floor(milliseconds / 10) % 100;
@@ -67,6 +73,7 @@ function getFormattedTime(milliseconds) {
 startButton.addEventListener("click", startTimer);
 stopButton.addEventListener("click", stopTimer);
 resetButton.addEventListener("click", resetTimer);
+lapButton.addEventListener("click", addLappedTime);
 
 // Initialize timer display
 timeDisplay.textContent = "00:00:00";

@@ -44,6 +44,11 @@ body {
     background-color: #232222;
 }
 
+.buttons-section {
+    display: flex;
+    justify-content: center;
+}
+
 .laps-section {
     font-size: 0.5rem;
     width: 10rem;

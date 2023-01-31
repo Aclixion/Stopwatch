@@ -66,3 +66,6 @@ function getFormattedTime(milliseconds) {
 startButton.addEventListener("click", startTimer);
 stopButton.addEventListener("click", stopTimer);
 resetButton.addEventListener("click", resetTimer);
+
+// Initialize timer display
+timeDisplay.textContent = "00:00:00";

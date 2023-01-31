@@ -42,6 +42,7 @@ body {
     border: none;
     color: white;
     background-color: #232222;
+    box-shadow: 5px 5px 0 #151515;
     transition: 0.5s;
 }
 

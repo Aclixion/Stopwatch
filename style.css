@@ -34,7 +34,7 @@ body {
     font-size: 1.75rem;
 }
 
-.stop-btn, .reset-btn, .start-btn, .lap-btn {
+.btn {
     font-size: 0.75rem;
     width: 2.25rem;
     height: 2.25rem;

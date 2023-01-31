@@ -43,10 +43,10 @@ body {
     color: white;
     background-color: #232222;
     box-shadow: 5px 5px 0 #151515;
-    transition: 0.5s;
+    transition: 0.25s;
 }
 
-.btn:hover {
+.btn:active {
     box-shadow: none;
     margin: 5px 0 0 5px;
     cursor: pointer;

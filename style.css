@@ -37,3 +37,7 @@
     border: 1px solid grey;
     overflow: scroll;
 }
+
+.lap:nth-child(odd) {
+    background-color: #e4e4e4;
+}

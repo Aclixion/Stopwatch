@@ -42,6 +42,7 @@ body {
     border: none;
     color: white;
     background-color: #232222;
+    transition: 0.5s;
 }
 
 .buttons-section {

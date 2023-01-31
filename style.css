@@ -45,6 +45,10 @@ body {
     transition: 0.5s;
 }
 
+.btn:hover {
+    margin: 5px 0 0 5px;
+}
+
 .buttons-section {
     display: flex;
     justify-content: center;

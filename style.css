@@ -40,6 +40,8 @@ body {
     height: 2.25rem;
     border-radius: 50%;
     border: none;
+    color: white;
+    background-color: #232222;
 }
 
 .laps-section {

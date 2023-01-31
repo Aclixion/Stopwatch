@@ -37,6 +37,7 @@ function resetTimer() {
     updateTimer();
 }
 
+// Adds a new lapped time to the laps section
 function addLappedTime() {
     let newLappedTime = document.createElement("p");
     newLappedTime.textContent = getFormattedTime(currentTime);

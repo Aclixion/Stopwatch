@@ -21,6 +21,7 @@ function startTimer() {
 // Updates timer
 function updateTimer() {
 	currentTime = stopTime + (Date.now() - startTime);
+    timeDisplay.textContent = getFormattedTime(currentTime);
 }
 
 // Stops timer
@@ -37,11 +38,29 @@ function resetTimer() {
 
 // Returns a formatted version of a time (time is in milliseconds)
 function getFormattedTime(milliseconds) {
-    let centiseconds = Math.floor(milliseconds / 10);
-    let seconds = Math.floor(milliseconds / 1000);
-    let minutes = Math.floor(seconds / 60);
+    let centiseconds = Math.floor(milliseconds / 10) % 100;
+    let seconds = Math.floor(milliseconds / 1000) % 60;
+    let minutes = Math.floor(seconds / 60) % 60;
 
-    return `${minutes % 60}:${seconds % 60}:${centiseconds % 100}`;
+    let centisecondsFormat = "";
+    if (centiseconds < 10) {
+        centisecondsFormat += "0";
+    }
+    centisecondsFormat += centiseconds;
+
+    let secondsFormat = "";
+    if (seconds < 10) {
+        secondsFormat += "0";
+    }
+    secondsFormat += seconds;
+
+    let minutesFormat = "";
+    if (minutes < 10) {
+        minutesFormat += "0";
+    }
+    minutesFormat += minutes;
+
+    return `${minutesFormat}:${secondsFormat}:${centisecondsFormat}`;
 }
 
 startButton.addEventListener("click", startTimer);

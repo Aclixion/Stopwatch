@@ -58,6 +58,7 @@ body {
 }
 
 .btn-container {
+    text-align: center;
     width: 3rem;
     height: 2.5rem;
 }
@@ -72,8 +73,4 @@ body {
 
 .lap {
     padding: 5px 3px;
-}
-
-.lap:nth-child(odd) {
-    background-color: #e4e4e4;
 }

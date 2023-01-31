@@ -49,6 +49,7 @@ body {
 .btn:hover {
     box-shadow: none;
     margin: 5px 0 0 5px;
+    cursor: pointer;
 }
 
 .buttons-section {

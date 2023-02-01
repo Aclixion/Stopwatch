@@ -24,6 +24,9 @@ function startTimer() {
     lapButton.classList.add("enabled");
     resetButton.classList.add("enabled");
     stopButton.classList.add("enabled");
+
+    lapButton.disabled = false;
+    resetButton.disabled = false;
 }
 
 // Updates timer

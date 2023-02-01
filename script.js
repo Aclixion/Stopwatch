@@ -12,8 +12,6 @@ let startTime = 0; // Time when start button is clicked (in milliseconds)
 let currentTime = 0; // Current time displayed on time display (in milliseconds)
 let stopTime = 0; // Time when stop button is clicked (in milliseconds)
 
-let timerIsRunning = false; // Whether or not the timer is running
-
 // Starts timer
 function startTimer() {
     if (!intervalId) {

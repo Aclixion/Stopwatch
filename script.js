@@ -20,6 +20,10 @@ function startTimer() {
     }
     startButton.parentElement.classList.add("hide");
     stopButton.parentElement.classList.remove("hide");
+
+    lapButton.classList.add("enabled");
+    resetButton.classList.add("enabled");
+    stopButton.classList.add("enabled");
 }
 
 // Updates timer

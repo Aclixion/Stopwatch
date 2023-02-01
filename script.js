@@ -99,3 +99,7 @@ stopButton.parentElement.classList.add("hide");
 
 // Initialize state of start button
 startButton.classList.add("enabled");
+
+// Disables lap and reset button
+lapButton.disabled = true;
+resetButton.disabled = true;

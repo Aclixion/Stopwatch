@@ -86,3 +86,6 @@ lapButton.addEventListener("click", addLappedTime);
 
 // Initialize timer display
 timeDisplay.textContent = "00:00:00";
+
+// Hide stop button when page is opened
+stopButton.parentElement.classList.add("hide");

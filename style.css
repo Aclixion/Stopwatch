@@ -50,6 +50,10 @@ body {
     transition: 0.25s;
 }
 
+.btn.enabled {
+    opacity: 1;
+}
+
 .btn:hover {
     cursor: pointer;
 }

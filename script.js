@@ -56,6 +56,10 @@ function resetTimer() {
     startTime = Date.now();
     clearInterval(intervalId);
     intervalId = null;
+    lapButton.disabled = true;
+    resetButton.disabled = true;
+    lapButton.classList.remove("enabled");
+    resetButton.classList.remove("enabled");
     updateTimer();
 }
 

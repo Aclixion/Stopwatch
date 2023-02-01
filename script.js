@@ -18,6 +18,8 @@ function startTimer() {
         startTime = Date.now();
         intervalId = setInterval(updateTimer, 10);
     }
+    startButton.parentElement.classList.add("hide");
+    stopButton.parentElement.classList.remove("hide");
 }
 
 // Updates timer
@@ -31,6 +33,8 @@ function stopTimer() {
     stopTime = currentTime;
     clearInterval(intervalId);
     intervalId = null;
+    startButton.parentElement.classList.remove("hide");
+    stopButton.parentElement.classList.add("hide");
 }
 
 // Resets timer

@@ -60,6 +60,8 @@ function resetTimer() {
     resetButton.disabled = true;
     lapButton.classList.remove("enabled");
     resetButton.classList.remove("enabled");
+    startButton.parentElement.classList.remove("hide");
+    stopButton.parentElement.classList.add("hide");
     updateTimer();
 }
 

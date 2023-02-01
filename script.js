@@ -54,6 +54,8 @@ function stopTimer() {
 function resetTimer() {
     stopTime = 0;
     startTime = Date.now();
+    clearInterval(intervalId);
+    intervalId = null;
     updateTimer();
 }
 

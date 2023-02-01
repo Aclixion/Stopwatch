@@ -39,6 +39,9 @@ function stopTimer() {
     intervalId = null;
     startButton.parentElement.classList.remove("hide");
     stopButton.parentElement.classList.add("hide");
+
+    lapButton.classList.remove("enabled");
+    resetButton.classList.remove("enabled");
 }
 
 // Resets timer
@@ -93,3 +96,6 @@ timeDisplay.textContent = "00:00:00";
 
 // Hide stop button when page is opened
 stopButton.parentElement.classList.add("hide");
+
+// Initialize state of start button
+startButton.classList.add("enabled");

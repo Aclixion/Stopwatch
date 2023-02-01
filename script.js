@@ -50,6 +50,19 @@ function addLappedTime() {
     lapsSection.appendChild(newLappedTime);
 }
 
+// Toggles displays of start and stop button
+function toggleStartStop() {
+    if (timerIsRunning) {
+        startButton.parentElement["style"]["display"] = "block";
+        stopButton.parentElement["style"]["display"] = "none";
+    } else {
+        startButton.parentElement["style"]["display"] = "none";
+        stopButton.parentElement["style"]["display"] = "block";
+    }
+}
+
+toggleStartStop();
+
 // Returns a formatted version of a time (time is in milliseconds)
 function getFormattedTime(milliseconds) {
     let centiseconds = Math.floor(milliseconds / 10) % 100;

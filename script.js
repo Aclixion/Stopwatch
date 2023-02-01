@@ -45,6 +45,9 @@ function stopTimer() {
 
     lapButton.classList.remove("enabled");
     resetButton.classList.remove("enabled");
+
+    lapButton.disabled = true;
+    resetButton.disabled = true;
 }
 
 // Resets timer

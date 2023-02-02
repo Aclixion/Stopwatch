@@ -42,6 +42,7 @@ function resetTimer() {
     clearInterval(intervalId);
     intervalId = null;
     updateTimer();
+    stopState();
 }
 
 // Adds a new lapped time to the laps section

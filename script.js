@@ -100,6 +100,18 @@ function getFormattedTime(milliseconds) {
     return `${minutesFormat}:${secondsFormat}:${centisecondsFormat}`;
 }
 
+// Enables reset button, allowing it to be clicked
+function enabledResetButton() {
+    resetButton.classList.add("enabled");
+    resetButton.disabled = false;
+}
+
+// Disables reset button
+function disableResetButton() {
+    resetButton.classList.remove("enabled");
+    resetButton.disabled = true;
+}
+
 startButton.addEventListener("click", startTimer);
 stopButton.addEventListener("click", stopTimer);
 resetButton.addEventListener("click", resetTimer);

@@ -134,6 +134,7 @@ startButton.addEventListener("click", () => {
     hideStartButton();
     displayStopButton();
 });
+
 stopButton.addEventListener("click", () => {
     stopTimer();
 
@@ -143,6 +144,7 @@ stopButton.addEventListener("click", () => {
     hideStopButton();
     displayStartButton();
 });
+
 resetButton.addEventListener("click", () => {
     resetTimer();
 
@@ -152,6 +154,7 @@ resetButton.addEventListener("click", () => {
     hideStopButton();
     displayStartButton();
 });
+
 lapButton.addEventListener("click", addLappedTime);
 
 // Initialize timer display

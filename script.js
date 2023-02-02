@@ -18,21 +18,11 @@ function startTimer() {
         startTime = Date.now();
         intervalId = setInterval(updateTimer, 10);
     }
-    startButton.parentElement.classList.add("hide");
-    stopButton.parentElement.classList.remove("hide");
-
-    lapButton.classList.add("enabled");
-    resetButton.classList.add("enabled");
-    stopButton.classList.add("enabled");
-
-    lapButton.disabled = false;
-    resetButton.disabled = false;
 }
 
 // Updates timer
 function updateTimer() {
 	currentTime = stopTime + (Date.now() - startTime);
-    timeDisplay.textContent = getFormattedTime(currentTime);
 }
 
 // Stops timer
@@ -40,14 +30,6 @@ function stopTimer() {
     stopTime = currentTime;
     clearInterval(intervalId);
     intervalId = null;
-    startButton.parentElement.classList.remove("hide");
-    stopButton.parentElement.classList.add("hide");
-
-    lapButton.classList.remove("enabled");
-    resetButton.classList.remove("enabled");
-
-    lapButton.disabled = true;
-    resetButton.disabled = true;
 }
 
 // Resets timer
@@ -55,13 +37,6 @@ function resetTimer() {
     stopTime = 0;
     startTime = Date.now();
     clearInterval(intervalId);
-    intervalId = null;
-    lapButton.disabled = true;
-    resetButton.disabled = true;
-    lapButton.classList.remove("enabled");
-    resetButton.classList.remove("enabled");
-    startButton.parentElement.classList.remove("hide");
-    stopButton.parentElement.classList.add("hide");
     updateTimer();
 }
 

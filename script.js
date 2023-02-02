@@ -32,6 +32,7 @@ function stopTimer() {
     stopTime = currentTime;
     clearInterval(intervalId);
     intervalId = null;
+    stopState();
 }
 
 // Resets timer

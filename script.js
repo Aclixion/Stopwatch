@@ -82,7 +82,7 @@ function updateTimeDisplay() {
 }
 
 // Enables reset button, allowing it to be clicked
-function enabledResetButton() {
+function enableResetButton() {
     resetButton.classList.add("enabled");
     resetButton.disabled = false;
 }

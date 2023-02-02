@@ -130,9 +130,9 @@ startButton.addEventListener("click", () => {
 
     enableLapButton();
     enableResetButton();
-    
+
     hideStartButton();
-    displayStartButton();
+    displayStopButton();
 });
 stopButton.addEventListener("click", stopTimer);
 resetButton.addEventListener("click", resetTimer);

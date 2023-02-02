@@ -23,6 +23,7 @@ function startTimer() {
 // Updates timer
 function updateTimer() {
 	currentTime = stopTime + (Date.now() - startTime);
+    updateTimeDisplay();
 }
 
 // Stops timer

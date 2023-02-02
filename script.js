@@ -134,6 +134,16 @@ function hideStartButton() {
     startButton.parentElement.classList.add("hide");
 }
 
+// Displays stop button
+function displayStopButton() {
+    stopButton.parentElement.classList.remove("hide");
+}
+
+// Hides stop button
+function hideStopButton() {
+    stopButton.parentElement.classList.add("hide");
+}
+
 startButton.addEventListener("click", startTimer);
 stopButton.addEventListener("click", stopTimer);
 resetButton.addEventListener("click", resetTimer);

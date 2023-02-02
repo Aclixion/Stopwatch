@@ -124,6 +124,16 @@ function disableLapButton() {
     lapButton.disabled = true;
 }
 
+// Displays start button
+function displayStartButton() {
+    startButton.classList.parentElement.classList.remove("hide");
+}
+
+// Hides start button
+function hideStartButton() {
+    startButton.classList.parentElement.classList.add("hide");
+}
+
 startButton.addEventListener("click", startTimer);
 stopButton.addEventListener("click", stopTimer);
 resetButton.addEventListener("click", resetTimer);

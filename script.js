@@ -82,6 +82,15 @@ function updateTimeDisplay() {
     timeDisplay.textContent = getFormattedTime(currentTime);
 }
 
+// Changes the timer to its start state
+function startState() {
+    enableLapButton();
+    enableResetButton();
+
+    hideStartButton();
+    displayStopButton();
+}
+
 // Enables reset button, allowing it to be clicked
 function enableResetButton() {
     resetButton.classList.add("enabled");

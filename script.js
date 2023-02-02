@@ -125,7 +125,15 @@ function hideStopButton() {
     stopButton.parentElement.classList.add("hide");
 }
 
-startButton.addEventListener("click", startTimer);
+startButton.addEventListener("click", () => {
+    startTimer();
+
+    enableLapButton();
+    enableResetButton();
+    
+    hideStartButton();
+    displayStartButton();
+});
 stopButton.addEventListener("click", stopTimer);
 resetButton.addEventListener("click", resetTimer);
 lapButton.addEventListener("click", addLappedTime);

@@ -100,6 +100,11 @@ function getFormattedTime(milliseconds) {
     return `${minutesFormat}:${secondsFormat}:${centisecondsFormat}`;
 }
 
+// Updates time display
+function updateTimeDisplay() {
+    timeDisplay.textContent = getFormattedTime(currentTime);
+}
+
 // Enables reset button, allowing it to be clicked
 function enabledResetButton() {
     resetButton.classList.add("enabled");

@@ -91,6 +91,15 @@ function startState() {
     displayStopButton();
 }
 
+// Changes the timer to its stop state
+function stopState() {
+    disableLapButton();
+    disableResetButton();
+
+    hideStopButton();
+    displayStartButton();
+}
+
 // Enables reset button, allowing it to be clicked
 function enableResetButton() {
     resetButton.classList.add("enabled");

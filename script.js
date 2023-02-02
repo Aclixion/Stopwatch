@@ -18,6 +18,7 @@ function startTimer() {
         startTime = Date.now();
         intervalId = setInterval(updateTimer, 10);
     }
+    startState();
 }
 
 // Updates timer

@@ -134,7 +134,15 @@ startButton.addEventListener("click", () => {
     hideStartButton();
     displayStopButton();
 });
-stopButton.addEventListener("click", stopTimer);
+stopButton.addEventListener("click", () => {
+    stopTimer();
+
+    disableLapButton();
+    disableResetButton();
+
+    hideStopButton();
+    displayStartButton();
+});
 resetButton.addEventListener("click", resetTimer);
 lapButton.addEventListener("click", addLappedTime);
 

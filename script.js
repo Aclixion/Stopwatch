@@ -112,6 +112,18 @@ function disableResetButton() {
     resetButton.disabled = true;
 }
 
+// Enables lap button, allowing it to be clicked
+function enableLapButton() {
+    lapButton.classList.add("enabled");
+    lapButton.disabled = false;
+}
+
+// Disables lap button
+function disableLapButton() {
+    lapButton.classList.remove("enabled");
+    lapButton.disabled = true;
+}
+
 startButton.addEventListener("click", startTimer);
 stopButton.addEventListener("click", stopTimer);
 resetButton.addEventListener("click", resetTimer);

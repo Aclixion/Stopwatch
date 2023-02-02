@@ -146,32 +146,14 @@ function hideStopButton() {
 
 startButton.addEventListener("click", () => {
     startTimer();
-
-    enableLapButton();
-    enableResetButton();
-
-    hideStartButton();
-    displayStopButton();
 });
 
 stopButton.addEventListener("click", () => {
     stopTimer();
-
-    disableLapButton();
-    disableResetButton();
-
-    hideStopButton();
-    displayStartButton();
 });
 
 resetButton.addEventListener("click", () => {
     resetTimer();
-
-    disableLapButton();
-    disableResetButton();
-
-    hideStopButton();
-    displayStartButton();
 });
 
 lapButton.addEventListener("click", addLappedTime);

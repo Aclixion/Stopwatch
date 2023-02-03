@@ -3,7 +3,7 @@ const timeDisplay = document.querySelector(".time-display"); // Time display
 const startButton = document.querySelector(".start-btn"); // Start timer button
 const stopButton = document.querySelector(".stop-btn"); // Stop timer button
 const lapButton = document.querySelector(".lap-btn"); // Lap button
-const resetButton = document.querySelector(".reset-btn") // Reset button
+const resetButton = document.querySelector(".reset-btn"); // Reset button
 const clearButton = document.querySelector(".clear-btn"); // Clear button
 const lapsSection = document.querySelector(".laps-section"); // Laps section to display all lapped times
 

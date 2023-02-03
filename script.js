@@ -160,6 +160,8 @@ resetButton.addEventListener("click", resetTimer);
 
 lapButton.addEventListener("click", addLappedTime);
 
+clearButton.addEventListener("click", clearLappedTimes);
+
 // Initializes application
 function initialize() {
     timeDisplay.textContent = "00:00:00";

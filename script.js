@@ -45,6 +45,11 @@ function resetTimer() {
     stopState();
 }
 
+// Remove all existing lapped times from the laps section
+function clearLappedTimes() {
+    lapsSection.ineerHTML = "";
+}
+
 // Adds a new lapped time to the laps section
 function addLappedTime() {
     let newLappedTime = document.createElement("p");

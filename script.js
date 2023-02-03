@@ -155,18 +155,17 @@ resetButton.addEventListener("click", resetTimer);
 
 lapButton.addEventListener("click", addLappedTime);
 
-// Initialize timer display
-timeDisplay.textContent = "00:00:00";
+// Initializes application
+function initialize() {
+    timeDisplay.textContent = "00:00:00";
 
-// Hide stop button when page is opened
-stopButton.parentElement.classList.add("hide");
+    startButton.classList.add("enabled");
+    stopButton.classList.add("enabled");
 
-// Initialize state of start button
-startButton.classList.add("enabled");
+    hideStopButton();
 
-// Enable stop button
-stopButton.classList.add("enabled");
+    disableLapButton();
+    disableResetButton();
+}
 
-// Disables lap and reset button
-lapButton.disabled = true;
-resetButton.disabled = true;
+initialize();

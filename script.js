@@ -161,6 +161,7 @@ function initialize() {
 
     startButton.classList.add("enabled");
     stopButton.classList.add("enabled");
+    clearButton.classList.add("enabled");
 
     hideStopButton();
 

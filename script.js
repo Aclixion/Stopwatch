@@ -108,6 +108,11 @@ function stopState() {
     displayStartButton();
 }
 
+// Scrolls to bottom of laps section
+function scrollToBottom() {
+    lapsSection.scrollTop = lapsSection.scrollHeight;
+}
+
 // Enables reset button, allowing it to be clicked
 function enableResetButton() {
     resetButton.classList.add("enabled");

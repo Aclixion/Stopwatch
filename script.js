@@ -56,6 +56,8 @@ function addLappedTime() {
     newLappedTime.classList.add("lap");
     newLappedTime.textContent = getFormattedTime(currentTime);
     lapsSection.appendChild(newLappedTime);
+
+    scrollToBottom();
 }
 
 // Returns a formatted version of a time (time is in milliseconds)

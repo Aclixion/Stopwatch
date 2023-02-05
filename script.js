@@ -1,3 +1,6 @@
+// // // // // // // //
+// ELEMENT SELECTORS //
+// // // // // // // //
 const timeDisplay = document.querySelector(".time-display"); // Time display 
 
 const startButton = document.querySelector(".start-btn"); // Start timer button
@@ -7,11 +10,19 @@ const resetButton = document.querySelector(".reset-btn"); // Reset button
 const clearButton = document.querySelector(".clear-btn"); // Clear button
 const lapsSection = document.querySelector(".laps-section"); // Laps section to display all lapped times
 
+
+// // // // // // //
+// TIMER VARIABLES //
+// // // // // // //
 let intervalId = null; // Interval ID used to change the timer display
 let startTime = 0; // Time when start button is clicked (in milliseconds)
 let currentTime = 0; // Current time displayed on time display (in milliseconds)
 let stopTime = 0; // Time when stop button is clicked (in milliseconds)
 
+
+// // // // // // // 
+// TIMER FUNCTIONS //
+// // // // // // //
 // Starts timer
 function startTimer() {
     if (!intervalId) {
@@ -60,6 +71,10 @@ function addLappedTime() {
     scrollToBottom();
 }
 
+
+// // // // // // //
+// HELPER FUNCTIONS //
+// // // // // // //
 // Returns a formatted version of a time (time is in milliseconds)
 function getFormattedTime(milliseconds) {
     let centiseconds = Math.floor(milliseconds / 10) % 100;
@@ -87,6 +102,15 @@ function getFormattedTime(milliseconds) {
     return `${minutesFormat}:${secondsFormat}:${centisecondsFormat}`;
 }
 
+// Scrolls to bottom of laps section
+function scrollToBottom() {
+    lapsSection.scrollTop = lapsSection.scrollHeight;
+}
+
+
+// // // // // // // //
+// DISPLAY FUNCTIONS //
+// // // // // // // //
 // Updates time display
 function updateTimeDisplay() {
     timeDisplay.textContent = getFormattedTime(currentTime);
@@ -108,11 +132,6 @@ function stopState() {
 
     hideStopButton();
     displayStartButton();
-}
-
-// Scrolls to bottom of laps section
-function scrollToBottom() {
-    lapsSection.scrollTop = lapsSection.scrollHeight;
 }
 
 // Enables reset button, allowing it to be clicked
@@ -159,16 +178,20 @@ function hideStopButton() {
     stopButton.parentElement.classList.add("hide");
 }
 
+
+// // // // // // //
+// EVENT LISTENERS //
+// // // // // // //
 startButton.addEventListener("click", startTimer);
-
 stopButton.addEventListener("click", stopTimer);
-
 resetButton.addEventListener("click", resetTimer);
-
 lapButton.addEventListener("click", addLappedTime);
-
 clearButton.addEventListener("click", clearLappedTimes);
 
+
+// // // // // // //
+// INITIALIZATION //
+// // // // // // //
 // Initializes application
 function initialize() {
     timeDisplay.textContent = "00:00:00";

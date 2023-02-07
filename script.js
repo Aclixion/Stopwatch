@@ -201,7 +201,7 @@ function initialize() {
     hideStopButton();
 
     disableLapButton();
-    disableResetButton();
+    enableResetButton();
 }
 
 initialize();

@@ -97,7 +97,7 @@ function getFormattedTime(milliseconds) {
     if (minutes % 60 < 10) {
         minutesFormat += "0";
     }
-    minutesFormat += minutes % 60;
+    minutesFormat += minutes;
 
     return `${minutesFormat}:${secondsFormat}:${centisecondsFormat}`;
 }

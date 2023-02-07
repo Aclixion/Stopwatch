@@ -119,7 +119,6 @@ function updateTimeDisplay() {
 // Changes the timer to its start state
 function startState() {
     enableLapButton();
-    enableResetButton();
 
     hideStartButton();
     displayStopButton();
@@ -128,7 +127,6 @@ function startState() {
 // Changes the timer to its stop state
 function stopState() {
     disableLapButton();
-    disableResetButton();
 
     hideStopButton();
     displayStartButton();
